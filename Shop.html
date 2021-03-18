@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="ids"></div>
+
+    <script>
+      "use Strict";
+      //in normal situation
+
+      
+      let myNewElement = document.createElement("p");
+      myNewElement.innerHTML = "some new text";
+      document.querySelector("#ids").append(myNewElement);
+
+      //check in array situation
+
+      let myNewArray = ["mani", "sahar", "ali"];
+      myNewArray.forEach((e) => {
+        let myNewElementInArray = document.createElement("p");
+        myNewElementInArray.innerHTML = e;
+        document.querySelector("#ids").append(myNewElementInArray);
+      });
+    </script>
+  </body>
+</html>
